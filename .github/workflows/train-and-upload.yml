@@ -25,5 +25,5 @@ jobs:
       - name: Train model
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_REPO: qq635039118/imdb-sentiment
+          HF_REPO: tianzechen/imdb-sentiment
         run: python train.py

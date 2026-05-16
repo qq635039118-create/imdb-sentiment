@@ -174,7 +174,7 @@ print("Saved config.json")
 # ========== 上传到 Hugging Face ==========
 HF_TOKEN = os.environ.get("HF_TOKEN")
 if HF_TOKEN:
-    repo_id = os.environ.get("HF_REPO", "qq635039118/imdb-sentiment")
+    repo_id = os.environ.get("HF_REPO", "tianzechen/imdb-sentiment")
     api = HfApi()
     
     print(f"\nUploading to Hugging Face: {repo_id}")
