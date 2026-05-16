@@ -23,7 +23,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Train model
+        run: python train.py
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_REPO: tianzechen/imdb-sentiment
-        run: python train.py
